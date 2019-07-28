@@ -3,7 +3,7 @@
 
 <head>
   <title>摩卡測試</title>
-  <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+  <link rel="stylesheet" href="node_modules/mocha/mocha.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
@@ -34,15 +34,15 @@
   </style>
   <section>
     <div id="mocha" class="bg-light">摩卡程式測試結果報告：</div>
-    <script src="../node_modules/mocha/mocha.js"></script>
-    <script src="../node_modules/chai/chai.js"></script>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
     <script>mocha.setup('bdd')</script>
 
     <!-- load code you want to test here -->
-    <script src="../js/FizzBuzz.js"></script>
+    <script src="js/FizzBuzz.js"></script>
 
     <!-- load your test files here -->
-    <script src="FizzBuzz_spec.js"></script>
+    <script src="test/FizzBuzz_spec.js"></script>
     <script>
       mocha.run();
     </script>
