@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>摩卡測試</title>
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body class="bg-secondary text-secondary">
+  <style>
+    h1,
+    h2,
+    li {
+      font-size: 125%;
+    }
+
+    img,
+    h5 {
+      width: 100%;
+      padding: 10px;
+    }
+
+    section {
+      margin: 0 10%;
+    }
+
+    #mocha {
+      border: 3px double lightgoldenrodyellow;
+      margin: 13px -12%;
+      padding: 5px;
+    }
+  </style>
+  <section>
+    <div id="mocha" class="bg-light">摩卡程式測試結果報告：</div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script>mocha.setup('bdd')</script>
+
+    <!-- load code you want to test here -->
+    <script src="../js/FizzBuzz.js"></script>
+
+    <!-- load your test files here -->
+    <script src="FizzBuzz_spec.js"></script>
+    <script>
+      mocha.run();
+    </script>
+    <div class="containe text-light">
+      <h5 class="text-center">看完這篇程式的測試報告後，<br>無論結果如何，<br>先繼續進行工程師的「摩卡測試<br>(mocha test)」<br>──品嘗一杯摩卡咖啡休息一下吧！</h5>
+      <img src="https://cdn.pixabay.com/photo/2017/01/05/04/08/mocha-1953889_1280.jpg" class="img-fluid"
+        alt="have a cup of mocha!">
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
